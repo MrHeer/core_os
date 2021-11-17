@@ -11,6 +11,10 @@ SBI ?= rustsbi
 BOOTLOADER := ../bootloader/$(SBI)-$(BOARD).bin
 K210_BOOTLOADER_SIZE := 131072
 
+# Logging
+# LOG  = off | error | warn | info | debug | trace
+LOG_LEVEL ?= info
+
 # KERNEL ENTRY
 ifeq ($(BOARD), qemu)
 	KERNEL_ENTRY_PA := 0x80200000
