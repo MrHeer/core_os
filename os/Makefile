@@ -12,8 +12,8 @@ BOOTLOADER := ../bootloader/$(SBI)-$(BOARD).bin
 K210_BOOTLOADER_SIZE := 131072
 
 # Logging
-# LOG  = off | error | warn | info | debug | trace
-LOG_LEVEL ?= info
+# LOG = off | error | warn | info | debug | trace
+LOG ?= info
 
 # KERNEL ENTRY
 ifeq ($(BOARD), qemu)
